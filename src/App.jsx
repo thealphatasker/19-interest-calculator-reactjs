@@ -19,6 +19,7 @@ const App = () => {
   return (
     <>
       <Header />
+      
       <div className="container">
         <div className="card">
           <form onSubmit={calculateInterest}>
