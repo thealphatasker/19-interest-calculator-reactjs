@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "./components/Header.jsx";
-import "./index.css";
+import "./App.css";
 
 const App = () => {
   const [principal, setPrincipal] = useState("");
@@ -19,7 +19,7 @@ const App = () => {
   return (
     <>
       <Header />
-      
+
       <div className="container">
         <div className="card">
           <form onSubmit={calculateInterest}>
@@ -63,13 +63,10 @@ const App = () => {
             </div>
           </form>
 
-  
-            <div className="result">
-              <h3>Simple Interest: Rs. {interest}</h3>
-              <h4>
-                Total Amount: Rs. {(Number(principal) + interest)}
-              </h4>
-            </div>
+          <div className="result">
+            <h3>Simple Interest: Rs. {interest}</h3>
+            <h4>Total Amount: Rs. {Number(principal) + interest}</h4>
+          </div>
         </div>
       </div>
     </>
